@@ -103,9 +103,20 @@ ul > :first-child a{
   line-height: 20px;
   position: absolute;
 }
+ul>:last-child{
+  margin-right: 140px;
+}
 @font-face {
   font-family: 'Montserrat';
   src:  url('../fonts/Montserrat-Regular.ttf');
   font-weight: normal;
   font-style: normal;
+}
+/*menu with user name*/
+.User::before{
+  content: "|";
+  color: rgba(31, 32, 65, 0.1);
+  display: inline-block;
+  vertical-align:top;
+  margin-right: 20px;
 }
