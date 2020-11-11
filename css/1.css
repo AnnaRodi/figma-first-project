@@ -1,8 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+}
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
 }
 li {
   list-style: none;
@@ -10,30 +17,7 @@ li {
 a{
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
-  color: #BC9CFF;/*светло-сиреневый*/
-  }
-.big-container{
-  background-color: #f4f4f4; /*светло-серый фон*/
-}
-  /*граница между блоками*/
-  .border{
-    height: 40px;
-
-  }/*самая верхняя граница*/
-  .top-border{
-    height: 140px;
-   }
-   .top-border img{
-    filter: grayscale(100%) opacity(25%);
-    margin-left: 30px;
-    margin-top: 30px;
-  }
-
-  /*header*/
-  .container{   /*этот контейнер почему то ломает маленькую кнопку, пропадает рамка*/
-    box-shadow: 0 10px 20px 0 rgba(31, 32, 65, 0.05), 0 -5px 20px 0 rgba(31, 32, 65, 0.05);
-    background-color: #ffffff;
-    
+  color: #BC9CFF;
   }
 .header__inner{
   display: flex;
@@ -45,10 +29,10 @@ a{
 .logo{
   display: flex;
   align-items: center;
-  margin-left: 140px;
 }
-.logo-letter{
-  margin-left: 12.5px;
+.logo-circle{
+  margin-left: 140px;
+  margin-right: 12.5px;
 }
 /*logo end*/
 
@@ -85,14 +69,8 @@ ul > :first-child a{
   height: 34px;
   border-radius: 24px;
   background: #fff;
-  padding: 9px 10px 10px 20px;
-  text-transform: uppercase;
-  font-family: 'Montserrat';
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 15px;
-  text-align: left;
-  color: #bc9cff;
+  text-align: center;
+  padding: 11% 0;
 }
 .default__btn::before {
   content: "";
@@ -105,21 +83,16 @@ ul > :first-child a{
   border-radius: 24px;
   z-index: -1;
 }
-.big-blue__btn{
+.login__btn{
   width: 196px;
   height: 34px;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  border-radius: 22px;
-  font-family: 'Montserrat', sans-serif;
   color: #fff;
   font-size: 12px;
   font-weight: 700;
-  font-family: Montserrat, sans-serif;
   line-height: 15px;
-  text-transform: uppercase;
-  padding-top: 9px;
-  padding-left: 19px;
-  }
+  padding: 3% 0;
+}
 .mdi-chevron-down{
   color: rgba(31, 32, 65, 0.5);
   width: 24px;

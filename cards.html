@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/cards.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="big-container"> <!--контейнер для всех маленьких  форм, зададим фон отступы-->
+    <div class="top-border border">
+      <div class="logo-circle">
+        <a href="#"><img src="./img/group.svg"  class="logo-img1" alt="logo"></a>
+      </div>
+    </div>
+
+    <div class="form__find-room"> <!--контейнер для формы - зададим высоту ширину формы-->
+      <div class="container"> <!--внутренний контейнер формы - зададим отступы до элементов-->
+        <!--начало - форма выбора даты заезда выезда-->
+        <div class="form__title">Найдем номера под ваши пожелания</div>
+        <div class="form__choose">
+          <div class="choose-date">
+            <div class="arrival">
+              <label for="arrival">прибытие</label>
+              <input type="text" placeholder="дд.мм.гггг" id="arrival" name="arrival">
+            </div>
+            <div class="departure">
+              <label for="departure">выезд</label>
+              <input type="text" placeholder="дд.мм.гггг" id="departure" name="departure">
+            </div>
+          </div>
+          <div class="choose-guest">
+            <label for="guests">гости</label>
+            <input type="text" placeholder="Сколько гостей" id="guests" name="guests">
+            <div class="default__btn login__btn big-blue__btn">подобрать номер</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
